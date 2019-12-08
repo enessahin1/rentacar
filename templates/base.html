@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+    <html class="no-js" lang="zxx">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--=== Favicon ===-->
+        <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}"type="image/x-icon" />
+
+
+        <!--=== Bootstrap CSS ===-->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <!--=== Slicknav CSS ===-->
+        <link rel="stylesheet" href="{% static 'css/plugins/slicknav.min.css' %}">
+        <!--=== Magnific Popup CSS ===-->
+        <link rel="stylesheet" href="{% static 'css/plugins/magnific-popup.css' %}">
+        <!--=== Owl Carousel CSS ===-->
+        <link rel="stylesheet" href="{% static 'css/plugins/owl.carousel.min.css' %}">
+        <!--=== Gijgo CSS ===-->
+        <link rel="stylesheet" href="{% static 'css/plugins/gijgo.css' %}">
+        <!--=== FontAwesome CSS ===-->
+        <link rel="stylesheet" href="{% static 'css/font-awesome.css' %}">
+        <!--=== Theme Reset CSS ===-->
+        <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+        <!--=== Main Style CSS ===-->
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <!--=== Responsive CSS ===-->
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+
+
+        <!--[if lt IE 9]>
+            <script src="{% static "js/html5shiv.min.js" %}"></script>
+            <script src="{% static "js/respond.min.js" %}"></script>
+        <![endif]-->
+    </head>
+
+    <body class="loader-active">
+
+        {% include "header.html" %}
+
+        {% block content %}
+
+        {% endblock %}
+
+
+    </body>
+</html>
